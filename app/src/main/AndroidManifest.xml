@@ -12,11 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.SelectionActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.OperatorsActivity"
@@ -47,7 +42,14 @@
             android:label="@string/zip" />
         <activity
             android:name=".ui.operators.DisposableExampleActivity"
-            android:label="@string/disposable" />
+            android:label="@string/disposable" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.operators.TakeExampleActivity"
             android:label="@string/take" />
